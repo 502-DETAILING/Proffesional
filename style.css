@@ -49,7 +49,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://i.imgur.com/7MNO7MN.jpeg') center/cover no-repeat;
+    background: linear-gradient(to bottom right, #000, #222);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,16 +57,7 @@ nav a:hover {
     position: relative;
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.55);
-}
-
 .hero-text {
-    position: relative;
     color: white;
     z-index: 2;
 }
@@ -121,32 +112,13 @@ nav a:hover {
 .card {
     background: white;
     border-radius: 12px;
-    overflow: hidden;
+    padding: 25px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: 0.2s;
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
 .card:hover {
     transform: translateY(-5px);
-}
-
-/* Gallery */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Contact */
